@@ -1,3 +1,3 @@
-(P - project) REACT / API Marvel Comics
+(P - project) REACT / Shop App
 
-Used - React JS
+Used - React JS, TypeScript
