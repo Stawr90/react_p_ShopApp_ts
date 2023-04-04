@@ -10,6 +10,10 @@ export function useProducts() {
         setProducts(prev => [...prev, product])
     }
 
+    function editProduct(product: IProduct) {
+        setProducts([product])
+    }
+
     async function fetchProducts() {
         try {
             setLoading(true)
@@ -27,5 +31,5 @@ export function useProducts() {
         fetchProducts()
     }, [])
 
-    return { products, error, loading, addProduct }
+    return { products, error, loading, addProduct, editProduct, fetchProducts }
 }
